@@ -2,15 +2,19 @@
 {% load static %}
 
 {% block content %}
-    {% if new_customer %}
+    {% if new_shipping %}
         <div class="alert alert-success" role="alert">
-          {{ new_customer }}
+          {{ new_shipping }}
         </div>
     {% endif %}
 
-    <h1>Customer details</h1>
+    <h1>Shipping details</h1>
     <p>{{ first_name }}</p>
     <p>{{ last_name }}</p>
     <p>{{ email }}</p>
+    <p>{{ city }}</p>
+    <p>{{ postal_code }}</p>
+    <p>{{ street }}</p>
+    <p>{{ house_number }}</p>
 
 {% endblock %}

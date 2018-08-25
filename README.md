@@ -42,17 +42,17 @@ GraphQL examples:
         "customers": [
           {
             "dateOfBirth": "1987-01-08",
-            "email": "voronov.a.g@gmail.com",
-            "firstName": "Andrey",
+            "email": "johnsong@gmail.com",
+            "firstName": "Andrew",
             "id": 1,
-            "lastName": "Voronov"
+            "lastName": "Travolra"
           },
           {
             "dateOfBirth": "1987-01-08",
-            "email": "a.g@gmail.com",
-            "firstName": "Andrey",
+            "email": "example@gmail.com",
+            "firstName": "Jason",
             "id": 2,
-            "lastName": "Voronov"
+            "lastName": "Born"
           }
         ]
       }
@@ -85,24 +85,24 @@ GraphQL examples:
         "shippings": [
           {
             "id": 1,
-            "firstName": "Andrey",
-            "lastName": "Voronov",
-            "phoneNumber": "+3937451596",
-            "email": "voronov.a.g@gmail.com",
-            "postalCode": "04214",
-            "city": "Kyiv",
-            "street": "Obolonskiy avenue 34-A, app. 89",
+            "firstName": "Don",
+            "lastName": "Jackson",
+            "phoneNumber": "+3337451226",
+            "email": "don@gmail.com",
+            "postalCode": "23214",
+            "city": "Kiev",
+            "street": "Exanple avenue",
             "houseNumber": "23"
           },
           {
             "id": 2,
-            "firstName": "Andrey",
-            "lastName": "Voronov",
-            "phoneNumber": "+2937451596",
+            "firstName": "Joe",
+            "lastName": "Vernon",
+            "phoneNumber": "+29374515336",
             "email": "a.g@gmail.com",
-            "postalCode": "04211",
-            "city": "Kyiv",
-            "street": "Obolonskiy avenue",
+            "postalCode": "02311",
+            "city": "Kiev",
+            "street": "Big street",
             "houseNumber": "23"
           }
         ]

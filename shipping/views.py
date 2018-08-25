@@ -24,12 +24,13 @@ def customer(request):
 
     data = {
         'section': {'title': "Customer Form"},
+        'h1': "New customer",
         'form': form
     }
     if errors:
         data["errors"] = errors
 
-    return render(request, 'shipping/customer.html', data)
+    return render(request, 'shipping/shipping.html', data)
 
 
 def customer_details(request, pk):
@@ -68,6 +69,7 @@ def shipping(request):
 
     data = {
         'section': {'title': "Shipping Form"},
+        'h1': "New shipping",
         'form': form
     }
     if errors:

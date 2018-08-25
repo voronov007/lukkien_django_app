@@ -1,7 +1,7 @@
 import re
 
 
-def check_person_data(data: dict) -> list:
+def person_data_validation(data: dict) -> list:
     errors = []
     is_matched = re.match(r'^\+[0-9]{7,14}$', data["phone_number"])
     if not is_matched:

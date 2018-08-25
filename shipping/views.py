@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 
 from .forms import CustomerForm, ShippingForm
 from .models import Customer, Shipping
-from .utils.forms import check_person_data
+from .utils.forms import person_data_validation
 
 
 def customer(request):
@@ -11,7 +11,7 @@ def customer(request):
     if request.method == "POST":
         form = CustomerForm(request.POST)
         if form.is_valid():
-            errors = check_person_data(form.data)
+            errors = person_data_validation(form.data)
             if not errors:
                 customer_obj = form.save()
                 response = redirect(
@@ -47,7 +47,7 @@ def customer_details(request, pk):
 
         return render(request, 'shipping/customer_details.html', data)
 
-    return JsonResponse({"message": "not found"})
+    return JsonResponse({"message": "Customer details not found"})
 
 
 def shipping(request):
@@ -55,7 +55,7 @@ def shipping(request):
     if request.method == "POST":
         form = ShippingForm(request.POST)
         if form.is_valid():
-            errors = check_person_data(form.data)
+            errors = person_data_validation(form.data)
             if not errors:
                 shipping_obj = form.save()
                 response = redirect(
@@ -95,4 +95,4 @@ def shipping_details(request, pk):
 
         return render(request, 'shipping/shipping_details.html', data)
 
-    return JsonResponse({"message": "not found"})
+    return JsonResponse({"message": "Shipping details not found"})

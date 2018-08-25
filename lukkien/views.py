@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.utils.html import format_html
 
 
 def index(request):

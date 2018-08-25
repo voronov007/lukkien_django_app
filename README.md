@@ -3,6 +3,8 @@
 ## Tech stack
 - Django 2.1
 - Python 3.6
+- API (GraphQL)
+- tests (pytest)
 
 
 ## Description
@@ -117,4 +119,5 @@ GraphQL examples:
 - `pip install -r requirements.txt`
 - `python manage.py runserver`
 - `python manage.py migrate`
+- run tests: `pytest`
  

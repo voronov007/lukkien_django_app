@@ -116,7 +116,10 @@ GraphQL examples:
 - install and activate virtual environment(virtualenv example)
     - `virtualenv -p python3.6 venv`
     - `source venv/bin/activate`
-- `pip install -r requirements.txt`
+- install requirements:
+   - dev machine `pip install -r requirements-dev.txt`
+   - production machine `pip install -r requirements.txt`. 
+   As production does not need additional debug/test packages
 - `python manage.py runserver`
 - `python manage.py migrate`
 - run tests: `pytest`
